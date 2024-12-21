@@ -1,0 +1,99 @@
+body{
+    background-color: beige;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    position:fixed;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    flex: 1;
+    margin: 2vw;
+}
+
+.nav_contents{
+    background-color: greenyellow;
+    padding: 1vw;
+    border-radius: 2.6vw;
+    padding: 1vw;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    flex: 1;  
+    width: 60vw;                     
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: green;
+}
+
+.dropdowns{
+    padding: 1vh;
+}
+
+.dropdown_contents{
+    display: none;
+    background-color: greenyellow;
+    width: max-content;
+    position: absolute;
+    z-index: index 1;
+    margin-top: 1vh;
+    opacity: 0;
+    border-radius: 0.5vw;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown_contents a {
+    display: block;
+    padding: 0.5vh 1vw;
+    margin: 0.2vh 0;
+    color: green;
+}
+
+.dropdowns:hover .dropdown_contents{
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.icons a{
+        color: green; 
+        font-size: 2rem;
+        text-decoration: none;
+}
+
+.heading{
+    color: green;
+    text-align: center;
+}
+
+.aside{
+    color: green;
+    position: absolute;
+}
+
+h2{
+    color: green; 
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: green; 
+}
